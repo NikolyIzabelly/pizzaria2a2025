@@ -3,9 +3,11 @@ import {useState} from 'react'
 function App(){
 
       const [nome, setNome] = useState('Ronaldo');
-  return (
-  <div>
-    <h3>Pizzaria 2A</h3>
+      const Formulario = () => {
+      return (
+        <>
+
+        <h4>Formulario de Inscrição</h4>
     <input className="Nome"
           name = "nome"
           placeholder="Digite seu nome..."
@@ -14,7 +16,7 @@ function App(){
         <button onClick={()=>{alert(nome)}}>
         CLIQUE AQUI 
         </button>
-  </div> 
+  </              > 
   )
 }
 
